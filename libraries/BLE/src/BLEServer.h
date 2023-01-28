@@ -64,7 +64,7 @@ class BLEServer {
 public:
 	uint32_t        getConnectedCount();
 	BLEService*     createService(const char* uuid);	
-	BLEService*     createService(BLEUUID uuid, uint32_t numHandles=15, uint8_t inst_id=0);
+	BLEService*     createService(BLEUUID uuid, uint32_t numHandles=40, uint8_t inst_id=0);
 	BLEAdvertising* getAdvertising();
 	void            setCallbacks(BLEServerCallbacks* pCallbacks);
 	void            startAdvertising();
